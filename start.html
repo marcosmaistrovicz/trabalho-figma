@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochila Inteligente</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .left {
+            background-color: #6a1b9a;
+            color: #fff;
+            padding: 50px 40px;
+            flex: 1;
+        }
+
+        .left h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 40px;
+            background-color: #e0e0e0;
+            position: relative; 
+        }
+
+        .right img {
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .quote {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-style: italic;
+            color: #333;
+            font-size: 16px;
+        }
+
+        @media(max-width: 900px){
+            body {
+                flex-direction: column;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .right {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .quote {
+                position: static;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Mochila Inteligente</h1>
+            <p><strong>Carregamento Solar:</strong> Carregue seus dispositivos usando energia limpa enquanto está em movimento.</p>
+            <p><strong>Design Prático:</strong> Compartimentos para laptop, celular e mais, com alças confortáveis.</p>
+            <p><strong>Sustentável e Durável:</strong> Resistente e feita com materiais de qualidade para o dia a dia.</p>
+            <p><strong>Perfeita para Aventuras:</strong> Energia sempre disponível, seja no trabalho ou ao ar livre.</p>
+        </div>
+        <div class="right">
+            <img src="mochila.jpeg" alt="Mochila verde com painel solar">
+            <img src="mochila2.avif" alt="Mochila preta com painel solar">
+            <div class="quote">"Carregue seus sonhos com o poder do sol"</div>
+        </div>
+    </div>
+</body>
+</html>
